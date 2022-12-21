@@ -210,7 +210,7 @@ struct FamilyMembersListView: View {
     
 // MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
     detail: {
-        InsightDetailView(insightId: insightId)
+        SnapshotDetailView(insightId: insightId)
     }
         
 

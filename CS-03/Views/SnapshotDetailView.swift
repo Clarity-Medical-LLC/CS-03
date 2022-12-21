@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct InsightDetailView: View {
+struct SnapshotDetailView: View {
     @EnvironmentObject var store: DataStore
     var insightId: Insight.ID?
     var body: some View {
@@ -83,9 +83,9 @@ struct InsightDetailView: View {
 }
     
 
-struct InsightDetailView_Previews: PreviewProvider {
+struct SnapshotDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        InsightDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        SnapshotDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(DataStore())
     }
 }
