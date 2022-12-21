@@ -41,7 +41,7 @@ struct SnapshotDetailView: View {
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
-                    Text("Insight Details:   " + insight.insightName)
+                    Text("Ingiht Tile Details:   " + insight.insightName)
                         .font(.headline)
                     Text("\"" + insight.insightHighRange + "\"")
                         .font(.largeTitle)
@@ -73,7 +73,7 @@ struct SnapshotDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Insight details display here...")
+                Text("Snapshot - Tiles display here...")
                     .font(.headline)
                 
             }

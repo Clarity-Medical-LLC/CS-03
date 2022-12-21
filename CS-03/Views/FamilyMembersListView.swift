@@ -122,7 +122,7 @@ struct FamilyMembersListView: View {
                         .resizable()
                         .scaledToFit()
                         .padding(40)
-                    Text("List of Insights")
+                    Text("Clinicians Snapshots")
                         .font(.headline)
                         
                 }
