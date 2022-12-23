@@ -36,9 +36,9 @@ struct SnapshotDetailView: View {
                     
                         .navigationTitle(insight.insightName)
 
-                    .toolbarBackground(.orange.gradient, for: .navigationBar)
-                    .toolbarBackground(.visible, for: .navigationBar)
-                    .toolbarColorScheme(.dark, for: .navigationBar)
+//                    .toolbarBackground(.orange.gradient, for: .navigationBar)
+//                    .toolbarBackground(.visible, for: .navigationBar)
+//                    .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
                     Text("Ingiht Tile Details:   " + insight.insightName)
