@@ -178,22 +178,6 @@ struct FamilyMembersListView: View {
                             Spacer()
                             Button { } label: { Image (systemName: "square.and.arrow.up.fill") .foregroundColor(.blue)
                                 Text("Share")}
-
-                          
-                        }
-
-                        
-                        ToolbarItemGroup (placement: .secondaryAction) {
-                            
-                            Button { } label: { Image(systemName: "list.clipboard.fill")
-                                Text("yy")}
-                            
-                            Button { } label: { Image(systemName: "cross.case.fill")
-                                Text("zz")}
-                            
-                            Button { } label: { Image(systemName: "calendar.circle.fill")
-                                Text("cal")}
-                            
                         }
                     }
                     .font(.caption)
