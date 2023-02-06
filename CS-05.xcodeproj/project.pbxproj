@@ -358,8 +358,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-02-06b";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-02-06b";
+				MARKETING_VERSION = "CS_05-2023-02-06a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-02-06a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -390,8 +390,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-02-06b";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-02-06b";
+				MARKETING_VERSION = "CS_05-2023-02-06a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-02-06a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
