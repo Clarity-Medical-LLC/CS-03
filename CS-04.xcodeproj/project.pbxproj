@@ -34,7 +34,7 @@
 		BB06EC6228C5536F00BFFFD9 /* SnapshotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotDetailView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
-		BBAD59A4288BAFB700FB853D /* CS-03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAD59A4288BAFB700FB853D /* CS-04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		BBAD59A9288BAFB700FB853D /* FamilyMembersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersListView.swift; sourceTree = "<group>"; };
 		BBAD59AB288BAFB800FB853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		BBAD599B288BAFB700FB853D = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A6288BAFB700FB853D /* CS-03 */,
+				BBAD59A6288BAFB700FB853D /* CS-04 */,
 				BBAD59A5288BAFB700FB853D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +78,12 @@
 		BBAD59A5288BAFB700FB853D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A4288BAFB700FB853D /* CS-03.app */,
+				BBAD59A4288BAFB700FB853D /* CS-04.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBAD59A6288BAFB700FB853D /* CS-03 */ = {
+		BBAD59A6288BAFB700FB853D /* CS-04 */ = {
 			isa = PBXGroup;
 			children = (
 				BBAD59A7288BAFB700FB853D /* AppEntry.swift */,
@@ -96,7 +96,7 @@
 				BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */,
 				BBAD59AD288BAFB800FB853D /* Preview Content */,
 			);
-			path = "CS-03";
+			path = "CS-04";
 			sourceTree = "<group>";
 		};
 		BBAD59AD288BAFB800FB853D /* Preview Content */ = {
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBAD59A3288BAFB700FB853D /* CS-03 */ = {
+		BBAD59A3288BAFB700FB853D /* CS-04 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-03" */;
+			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-04" */;
 			buildPhases = (
 				BBAD59A0288BAFB700FB853D /* Sources */,
 				BBAD59A1288BAFB700FB853D /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "CS-03";
+			name = "CS-04";
 			productName = ThreeColNav;
-			productReference = BBAD59A4288BAFB700FB853D /* CS-03.app */;
+			productReference = BBAD59A4288BAFB700FB853D /* CS-04.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-03" */;
+			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-04" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBAD59A3288BAFB700FB853D /* CS-03 */,
+				BBAD59A3288BAFB700FB853D /* CS-04 */,
 			);
 		};
 /* End PBXProject section */
@@ -346,7 +346,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "CS-03-23a";
+				INFOPLIST_KEY_CFBundleDisplayName = "CS-2023-02-06a";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,8 +358,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2022-12-23a";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-03-23a";
+				MARKETING_VERSION = "2023-02-06a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-2023-02-06a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -378,7 +378,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "CS-03-23a";
+				INFOPLIST_KEY_CFBundleDisplayName = "CS-2023-02-06a";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -390,8 +390,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2022-12-23a";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-03.23a";
+				MARKETING_VERSION = "2023-02-06a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-2023-02-06a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-03" */ = {
+		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-04" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B0288BAFB800FB853D /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-03" */ = {
+		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-04" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B3288BAFB800FB853D /* Debug */,
