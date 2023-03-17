@@ -15,7 +15,9 @@ struct AppEntry: App {
     @StateObject var store = DataStore()
     var body: some Scene {
         WindowGroup {
-            StartTabView()
+
+            SnapshotListView()
+            
                 .environmentObject(store)
         }
     }

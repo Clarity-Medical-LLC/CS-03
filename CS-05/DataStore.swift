@@ -11,7 +11,7 @@
 import Foundation
 
 class DataStore: ObservableObject {
-    @Published var FamilyMembers: [Member] = []
+    @Published var FamilyMembers: [Snapshot] = []
     @Published var Insights: [Insight] = []
     @Published var insightsFilter = ""
     
@@ -26,7 +26,7 @@ class DataStore: ObservableObject {
     func loadData() {
         let json = Bundle.main.decode([FamilyMemberJSON].self, from: "MOCK_DATA.json")
         for familymember in json {
-            var newFamilyMember = Member(id: familymember.id, name: familymember.name)
+            var newFamilyMember = Snapshot(id: familymember.id, name: familymember.name)
             for insight in familymember.insights {
                 let newInsight = Insight(id: insight.id,
                                            insightName: insight.insightName,
@@ -50,7 +50,7 @@ class DataStore: ObservableObject {
         Insights.first(where: {$0.id == id})
     }
     
-    func familymember(id: String) -> Member? {
+    func familymember(id: String) -> Snapshot? {
         FamilyMembers.first(where: {$0.id == id})
     }
 }

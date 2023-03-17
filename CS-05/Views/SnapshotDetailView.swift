@@ -17,23 +17,6 @@ struct SnapshotDetailView: View {
             if let insight = store.insight(id: insightId) {
                 VStack {
                  Text ("")
-//                    GroupBox {
-//                        HStack {
-//                            Image(systemName: "waveform.path.ecg.rectangle")
-//                                .font(.largeTitle)
-//                            VStack (alignment: .leading) {
-//                                Text(insight.familymember.name)
-//                                    .font(.headline)
-//                                    .fontWeight(.bold)
-//                                Text("As of:  December 1, 2022")
-//                                    .font(.caption .italic())
-//
-//                            }
-//                            Spacer()
-//                        }
-//                    }
-                    
-                    
                         .navigationTitle(insight.insightName)
 
 //                    .toolbarBackground(.orange.gradient, for: .navigationBar)

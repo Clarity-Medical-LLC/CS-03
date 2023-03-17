@@ -10,7 +10,7 @@
 
 import Foundation
 
-struct Member: Identifiable {
+struct Snapshot: Identifiable {
     var id: String
     var name: String
     var insights: [Insight] = []
