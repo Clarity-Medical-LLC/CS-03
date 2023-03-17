@@ -12,6 +12,7 @@ import Foundation
 
 struct Snapshot: Identifiable {
     var id: String
+    var dateCreated: String
     var name: String
     var insights: [Insight] = []
 }

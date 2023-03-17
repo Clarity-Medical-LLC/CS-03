@@ -106,8 +106,8 @@
 		BBB1EA2728C4573E00F0228A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59BF288BB08600FB853D /* Insight.swift */,
 				BBAD59BD288BB05500FB853D /* Snapshot.swift */,
+				BBAD59BF288BB08600FB853D /* Insight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

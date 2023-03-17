@@ -49,7 +49,7 @@ struct SnapshotListView: View {
                             .font(.headline)
                             .fontWeight(.bold)
                         
-                        Text("Reason for visit")
+                        Text(familymember.dateCreated)
                             .font(.caption)
                             .padding(.bottom)
                     }

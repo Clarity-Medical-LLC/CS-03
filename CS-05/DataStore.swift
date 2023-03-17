@@ -26,7 +26,7 @@ class DataStore: ObservableObject {
     func loadData() {
         let json = Bundle.main.decode([FamilyMemberJSON].self, from: "MOCK_DATA.json")
         for familymember in json {
-            var newFamilyMember = Snapshot(id: familymember.id, name: familymember.name)
+            var newFamilyMember = Snapshot(id: familymember.id, dateCreated: familymember.dateCreated, name: familymember.name)
             for insight in familymember.insights {
                 let newInsight = Insight(id: insight.id,
                                            insightName: insight.insightName,

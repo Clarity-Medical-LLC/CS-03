@@ -10,8 +10,9 @@
 import Foundation
 
     struct FamilyMemberJSON: Codable, Identifiable {
-        var name: String
         let id: String
+        var name: String
+        var dateCreated: String
         var insights: [Insight]
         
         struct Insight: Codable, Identifiable, Hashable {
