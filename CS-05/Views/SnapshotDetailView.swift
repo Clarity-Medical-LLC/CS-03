@@ -56,7 +56,7 @@ struct SnapshotDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Snapshot - Tiles display here...")
+                Text("Insights - Research")
                     .font(.headline)
                 
             }

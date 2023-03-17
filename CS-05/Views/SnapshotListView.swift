@@ -29,12 +29,15 @@ struct SnapshotListView: View {
             // To display the App Name & Version underneath .navigationTitle
             
             HStack {
-                Text("\(appName)  \(appVersion)")
-                    .font(.caption2)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.leading)
-                    .italic()
+                Text("  Github: "
+                     + (appName)
+                     + "   v. "
+                     + (appVersion))
+                    .font(.subheadline)
+                    .padding(.leading)
+                Spacer()
             }
+
             
             // NSV Part 1 - list family members
             
@@ -87,7 +90,7 @@ struct SnapshotListView: View {
                 HStack {
                     Text("Snapshot Created: "
                          + familymember.dateCreated)
-                    .font(.caption)
+                    .font(.subheadline)
                     .padding (.leading)
                     Spacer()
                 }
