@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "mac256.png",
+      "filename" : "mac128.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
