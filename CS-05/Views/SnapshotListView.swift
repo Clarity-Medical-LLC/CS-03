@@ -73,7 +73,7 @@ struct SnapshotListView: View {
                     .resizable()
                     .scaledToFit()
                     .padding(40)
-                Text("Clinicians Snapshots")
+                Text("Clinicial Snapshot - Insights")
                     .font(.headline)
                 
             }
@@ -83,6 +83,16 @@ struct SnapshotListView: View {
                 
                 
                 // This is the Patient Title Block for top of Insignts List View
+                
+                HStack {
+                    Text("Snapshot Created: "
+                         + familymember.dateCreated)
+                    .font(.caption)
+                    .padding (.leading)
+                    Spacer()
+                }
+
+                
                 List(familymember.insights, selection: $insightId) { insight in
                     GroupBox  {
                         VStack (alignment: .leading) {
@@ -95,6 +105,7 @@ struct SnapshotListView: View {
                 }
                 .padding()
                 .navigationTitle(familymember.name)
+
                 
                 
             }
