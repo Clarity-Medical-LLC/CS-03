@@ -1,10 +1,7 @@
 //
-// Created for NavigationSplitView
-// by Stewart Lynch on 2022-06-21
-// Using Swift 5.0
+// GitHub:  CS-05    Branch Version:  2023-03-17b
 //
-// Follow me on Twitter: @StewartLynch
-// Subscribe on YouTube: https://youTube.com/StewartLynch
+// by John Mather March 15, 2023
 //
     
 

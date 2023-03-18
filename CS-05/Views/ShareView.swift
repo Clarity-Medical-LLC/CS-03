@@ -1,8 +1,7 @@
 //
-//  ShareView.swift
-//  CS-01c
+// GitHub:  CS-05    Branch Version:  2023-03-17b
 //
-//  Created by John C Mather on 12/1/22.
+// by John Mather March 15, 2023
 //
 
 import SwiftUI
