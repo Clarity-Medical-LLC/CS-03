@@ -53,7 +53,7 @@ struct SnapshotDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Insights - Research")
+                Text("Insight - Details")
                     .font(.headline)
                 
             }

@@ -61,7 +61,6 @@ struct SnapshotListView: View {
             }
             .navigationTitle("My Family")
             
-            
         }
         
         // MARK: - CONTENT SECTION OF NAVIGATION SPLIT VIEW
