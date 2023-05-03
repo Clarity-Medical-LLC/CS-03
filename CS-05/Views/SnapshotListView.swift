@@ -8,7 +8,7 @@ import SwiftUI
 
 struct SnapshotListView: View {
     @EnvironmentObject var store: DataStore
-    @State private var familyMemberId: Snapshot.ID?
+    @State private var snapshotID: Snapshot.ID?
     @State private var insightId: Insight.ID?
     @State private var columnVisibility:
     
@@ -38,7 +38,7 @@ struct SnapshotListView: View {
             
             // NSV Part 1 - list family members
             
-            List(store.FamilyMembers, selection: $familyMemberId) { familymember in
+            List(store.Snapshots, selection: $snapshotID) { familymember in
                 
                 HStack (alignment: .top) {
                     Image(systemName: "person.crop.circle")
@@ -66,19 +66,19 @@ struct SnapshotListView: View {
         // MARK: - CONTENT SECTION OF NAVIGATION SPLIT VIEW
         
     content: {
-        if familyMemberId == nil {
+        if snapshotID == nil {
             VStack {
-                Image("familymember")
+                Image("snapshotPlaceholder")
                     .resizable()
                     .scaledToFit()
                     .padding(40)
-                Text("Clinicial Snapshot - Insights")
+                Text("Clinicial Snapshot - Insight Groups")
                     .font(.headline)
                 
             }
             .padding()
         } else {
-            if let familymember = store.familymember(id: familyMemberId!) {
+            if let familymember = store.familymember(id: snapshotID!) {
                 
                 
                 // This is the Patient Title Block for top of Insignts List View
@@ -121,7 +121,7 @@ struct SnapshotListView: View {
 
         .navigationSplitViewStyle(.balanced)
  
-    .onChange(of: familyMemberId) { _ in insightId = nil; columnVisibility = .doubleColumn}
+    .onChange(of: snapshotID) { _ in insightId = nil; columnVisibility = .doubleColumn}
  
     .onChange(of: insightId) { _ in
         if insightId == nil {

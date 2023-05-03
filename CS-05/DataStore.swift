@@ -8,7 +8,10 @@
 import Foundation
 
 class DataStore: ObservableObject {
-    @Published var FamilyMembers: [Snapshot] = []
+    
+//  @Published var Families: [Family] = []
+//  @Published var FamilyMembers: [FamilyMember} = []
+    @Published var Snapshots: [Snapshot] = []
     @Published var Insights: [Insight] = []
     @Published var insightsFilter = ""
     
@@ -36,10 +39,10 @@ class DataStore: ObservableObject {
                 newFamilyMember.insights.append(newInsight)
             }
             newFamilyMember.insights = newFamilyMember.insights.sorted(using: KeyPathComparator(\.insightCode))
-            FamilyMembers.append(newFamilyMember)
+            Snapshots.append(newFamilyMember)
             
         }
-        FamilyMembers = FamilyMembers.sorted(using: KeyPathComparator(\.name))
+        Snapshots = Snapshots.sorted(using: KeyPathComparator(\.name))
         Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
     }
     
@@ -48,6 +51,6 @@ class DataStore: ObservableObject {
     }
     
     func familymember(id: String) -> Snapshot? {
-        FamilyMembers.first(where: {$0.id == id})
+        Snapshots.first(where: {$0.id == id})
     }
 }
