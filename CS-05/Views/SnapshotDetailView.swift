@@ -23,21 +23,25 @@ struct SnapshotDetailView: View {
                     Spacer()
                     Text("Ingiht Tile Details:   " + insight.insightName)
                         .font(.headline)
-                    Text("\"" + insight.insightHighRange + "\"")
+                    Text("\"" + insight.insightCode + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
                         .italic()
                         .padding()
                     Grid {
                         GridRow(alignment: .top) {
-                            Text("Department:").bold()
+                            Text("Low:").bold()
                                 .gridColumnAlignment(.trailing)
                             Text(insight.insightLowRange)
                                 .gridColumnAlignment(.leading)
                         }
                         GridRow(alignment: .top) {
-                            Text("Title:").bold()
+                            Text("Target:").bold()
                             Text(insight.insightValue1)
+                        }
+                        GridRow(alignment: .top) {
+                            Text("High:").bold()
+                            Text(insight.insightHighRange)
                         }
                     }
                     .padding()

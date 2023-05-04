@@ -7,10 +7,10 @@
       {
         "id": "92c08f4a-d5bf-49e4-809f-7aefaa155c16",
         "insightName": "Vital Signs",
-        "insightCode": "Mather",
-        "insightValue1": "VP Marketing",
-        "insightLowRange": "Sales",
-        "insightHighRange": "optimize granular convergence"
+        "insightCode": "Blood Pressure",
+        "insightValue1": "120/30",
+        "insightLowRange": "100/20",
+        "insightHighRange": "200/60"
       },
       {
         "id": "80bee40f-0ff7-4c56-a70d-002fa36726ae",
