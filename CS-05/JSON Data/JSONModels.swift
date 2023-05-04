@@ -8,7 +8,7 @@ import Foundation
 
     struct SnapshotJSON: Codable, Identifiable {
         let id: String
-        var name: String
+        var description: String
         var dateCreated: String
         var insights: [Insight]
         

@@ -37,21 +37,21 @@ class DataStore: ObservableObject {
     
     func loadData() {
         let json = Bundle.main.decode([SnapshotJSON].self, from: "MOCK_DATA.json")
-        for familymember in json {
-            var newFamilyMember = Snapshot(id: familymember.id, dateCreated: familymember.dateCreated, name: familymember.name)
-            for insight in familymember.insights {
+        for snapshot in json {
+            var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
+            for insight in snapshot.insights {
                 let newInsight = Insight(id: insight.id,
                                            insightName: insight.insightName,
                                            insightCode: insight.insightCode,
                                            insightLowRange: insight.insightLowRange,
                                            insightHighRange: insight.insightHighRange,
                                            insightValue1: insight.insightValue1,
-                                           familymember: newFamilyMember)
+                                           familymember: newSnapshot)
                 Insights.append(newInsight)
-                newFamilyMember.insights.append(newInsight)
+                newSnapshot.insights.append(newInsight)
             }
-            newFamilyMember.insights = newFamilyMember.insights.sorted(using: KeyPathComparator(\.insightCode))
-            Snapshots.append(newFamilyMember)
+            newSnapshot.insights = newSnapshot.insights.sorted(using: KeyPathComparator(\.insightCode))
+            Snapshots.append(newSnapshot)
             
         }
         Snapshots = Snapshots.sorted(using: KeyPathComparator(\.name))

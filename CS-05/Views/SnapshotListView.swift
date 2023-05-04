@@ -140,7 +140,7 @@ struct SnapshotListView: View {
 
 
 
-struct FamilyMembesListView_Previews: PreviewProvider {
+struct SnapshotListView_Previews: PreviewProvider {
     static var previews: some View {
         SnapshotListView()
             .environmentObject(DataStore())
