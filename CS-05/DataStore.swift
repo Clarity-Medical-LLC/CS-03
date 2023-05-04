@@ -32,10 +32,10 @@ class DataStore: ObservableObject {
     }
 
     init() {
-        loadData()
+        loadSnapshots()
     }
     
-    func loadData() {
+    func loadSnapshots() {
         let json = Bundle.main.decode([SnapshotJSON].self, from: "MOCK_DATA.json")
         for snapshot in json {
             var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
