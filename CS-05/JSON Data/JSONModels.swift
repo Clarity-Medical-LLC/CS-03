@@ -6,7 +6,7 @@
 
 import Foundation
 
-    struct FamilyMemberJSON: Codable, Identifiable {
+    struct SnapshotJSON: Codable, Identifiable {
         let id: String
         var name: String
         var dateCreated: String
