@@ -54,7 +54,7 @@ class DataStore: ObservableObject {
             Snapshots.append(newSnapshot)
             
         }
-        Snapshots = Snapshots.sorted(using: KeyPathComparator(\.name))
+        Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
         Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
     }
     
