@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataStore: ObservableObject {
+class SnapshotDataStore: ObservableObject {
  
     
 // MARK: - Every User has one to many Families.  Every HouseCall download is installed with a "LooksLike" family in the Families array:
@@ -36,7 +36,7 @@ class DataStore: ObservableObject {
     }
     
     func loadSnapshots() {
-        let json = Bundle.main.decode([SnapshotJSON].self, from: "MOCK_DATA.json")
+        let json = Bundle.main.decode([SnapshotJSON].self, from: "SNAPSHOT_MOCK_DATA.json")
         for snapshot in json {
             var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
             for insight in snapshot.insights {

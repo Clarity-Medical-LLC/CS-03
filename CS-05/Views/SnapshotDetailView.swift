@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct SnapshotDetailView: View {
-    @EnvironmentObject var store: DataStore
+    @EnvironmentObject var store: SnapshotDataStore
     var insightId: Insight.ID?
     var body: some View {
         if let insightId {
@@ -70,6 +70,6 @@ struct SnapshotDetailView: View {
 struct SnapshotDetailView_Previews: PreviewProvider {
     static var previews: some View {
         SnapshotDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
-            .environmentObject(DataStore())
+            .environmentObject(SnapshotDataStore())
     }
 }
