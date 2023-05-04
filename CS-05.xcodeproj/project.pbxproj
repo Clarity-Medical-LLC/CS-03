@@ -338,7 +338,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Model Work";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-04C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,8 +350,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-04B";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-05-04B";
+				MARKETING_VERSION = "2023-05-04C";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-05-04C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -370,7 +370,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Model Work";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-04C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -382,8 +382,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-04B";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-05-04B";
+				MARKETING_VERSION = "2023-05-04C";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-05-2023-05-04C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
