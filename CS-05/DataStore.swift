@@ -12,11 +12,11 @@ class DataStore: ObservableObject {
     
 // MARK: - Every User has one to many Families.  Every HouseCall download is installed with a "LooksLike" family in the Families array:
   
-//  @Published var Families: [Family] = []
+    //  @Published var Families: [Family] = []
     
 // MARK: - Each Family has one to many IDCards (IDCs) containing unique HIPPA identification data for a family member.
 
-//  @Published var IdCards: [IdCard] = []
+    //  @Published var IdCards: [IdCard] = []
     
 // MARK: - Each IdCard may be linked one or more Snapshots, representing a point-in-time set of health data insights:
 
