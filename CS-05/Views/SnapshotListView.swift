@@ -10,9 +10,7 @@ struct SnapshotListView: View {
     @EnvironmentObject var snapshotDataStore: SnapshotDataStore
     @State private var snapshotID: Snapshot.ID?
     @State private var insightId: Insight.ID?
-    @State private var columnVisibility:
-    
-    NavigationSplitViewVisibility = .all
+    @State private var columnVisibility:  NavigationSplitViewVisibility = .all
     
     var body: some View {
         
@@ -81,33 +79,38 @@ struct SnapshotListView: View {
             if let snapshot = snapshotDataStore.snapshot(id: snapshotID!) {
                 
                 
-                // This is the Patient Title Block for top of Insignts List View
+                // This is the Family Member Title Block for top of Insignts List View
                 
-                HStack {
-                    Text("Snapshot Created: "
-                         + snapshot.dateCreated)
-                    .font(.subheadline)
-                    .padding (.leading)
-                    Spacer()
+                VStack (alignment: .leading) {
+                    Text(snapshot.name)
+                        .font(.title)
+                        .padding (.leading)
+                    HStack {
+                        Text("Conditions as of: "
+                             + "\(snapshot.dateCreated)")
+                        .font(.subheadline)
+                        .padding (.leading)
+                        Spacer()
+                    }
                 }
+               Spacer()
 
                 
                 List(snapshot.insights, selection: $insightId) { insight in
-                    GroupBox  {
+
                         VStack (alignment: .leading) {
                             Text(insight.insightName)
                                 .font(.headline)
-                            Text("Insight                                                                                               ")
+                            Text("Condition")
                                 .font(.caption)
+  
                         }
-                    }
                 }
                 .padding()
-                .navigationTitle(snapshot.name)
-
-                
+              .navigationTitle(snapshot.name)
                 
             }
+            
         }
     }
         
@@ -116,18 +119,16 @@ struct SnapshotListView: View {
             detail: {
                 SnapshotDetailView(insightId: insightId)
             }
-    
-
 
         .navigationSplitViewStyle(.balanced)
  
-    .onChange(of: snapshotID) { _ in insightId = nil; columnVisibility = .doubleColumn}
+        .onChange(of: snapshotID) { _ in insightId = nil; columnVisibility = .doubleColumn}
  
-    .onChange(of: insightId) { _ in
+        .onChange(of: insightId) { _ in
         if insightId == nil {
             columnVisibility = .all
         } else {
-            columnVisibility = .detailOnly
+            columnVisibility = .doubleColumn
         }
 
 
