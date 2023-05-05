@@ -18,9 +18,9 @@ class SnapshotDataStore: ObservableObject {
     @Published var Insights: [Insight] = []
     @Published var insightsFilter = ""
     
-    var filteredEmployees: [Insight] {
-        insightsFilter.isEmpty ? Insights : Insights.filter {$0.fullName.lowercased().contains(insightsFilter.lowercased())}
-    }
+//    var filteredInsights: [Insight] {
+//        insightsFilter.isEmpty ? Insights : Insights.filter {$0.fullName.lowercased().contains(insightsFilter.lowercased())}
+//    }
 
     init() {
         loadSnapshots()
