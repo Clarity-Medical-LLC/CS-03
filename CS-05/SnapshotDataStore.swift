@@ -45,8 +45,8 @@ class SnapshotDataStore: ObservableObject {
             Snapshots.append(newSnapshot)
             
         }
-        Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
-        Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
+ //       Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
+//        Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
     }
     // Return first insight where insight matches, if one exists (?)
     func insight(id: String) -> Insight? {

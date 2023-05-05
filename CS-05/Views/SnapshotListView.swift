@@ -86,7 +86,7 @@ struct SnapshotListView: View {
                         .font(.title)
                         .padding (.leading)
                     HStack {
-                        Text("Conditions as of: "
+                        Text("Situation as of: "
                              + "\(snapshot.dateCreated)")
                         .font(.subheadline)
                         .padding (.leading)
@@ -101,13 +101,14 @@ struct SnapshotListView: View {
                         VStack (alignment: .leading) {
                             Text(insight.insightName)
                                 .font(.headline)
-                            Text("Condition")
+                            Text("Key Insights")
                                 .font(.caption)
+                            Text("Questions to ask")
   
                         }
                 }
                 .padding()
-              .navigationTitle(snapshot.name)
+ //             .navigationTitle(snapshot.name
                 
             }
             
