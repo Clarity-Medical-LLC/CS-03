@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct SnapshotListView: View {
-    @EnvironmentObject var store: SnapshotDataStore
+    @EnvironmentObject var snapshotDataStore: SnapshotDataStore
     @State private var snapshotID: Snapshot.ID?
     @State private var insightId: Insight.ID?
     @State private var columnVisibility:
@@ -38,18 +38,18 @@ struct SnapshotListView: View {
             
             // NSV Part 1 - list family members
             
-            List(store.Snapshots, selection: $snapshotID) { familymember in
+            List(snapshotDataStore.Snapshots, selection: $snapshotID) { snapshot in
                 
                 HStack (alignment: .top) {
                     Image(systemName: "person.crop.circle")
                         .font(.largeTitle)
                     
                     VStack (alignment: .leading) {
-                        Text(familymember.name)
+                        Text(snapshot.name)
                             .font(.headline)
                             .fontWeight(.bold)
                         
-                        Text(familymember.dateCreated)
+                        Text(snapshot.dateCreated)
                             .font(.caption)
                             .padding(.bottom)
                     }
@@ -78,21 +78,21 @@ struct SnapshotListView: View {
             }
             .padding()
         } else {
-            if let familymember = store.familymember(id: snapshotID!) {
+            if let snapshot = snapshotDataStore.snapshot(id: snapshotID!) {
                 
                 
                 // This is the Patient Title Block for top of Insignts List View
                 
                 HStack {
                     Text("Snapshot Created: "
-                         + familymember.dateCreated)
+                         + snapshot.dateCreated)
                     .font(.subheadline)
                     .padding (.leading)
                     Spacer()
                 }
 
                 
-                List(familymember.insights, selection: $insightId) { insight in
+                List(snapshot.insights, selection: $insightId) { insight in
                     GroupBox  {
                         VStack (alignment: .leading) {
                             Text(insight.insightName)
@@ -103,7 +103,7 @@ struct SnapshotListView: View {
                     }
                 }
                 .padding()
-                .navigationTitle(familymember.name)
+                .navigationTitle(snapshot.name)
 
                 
                 

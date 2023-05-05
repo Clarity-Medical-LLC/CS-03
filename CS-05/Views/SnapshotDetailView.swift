@@ -7,11 +7,11 @@
 import SwiftUI
 
 struct SnapshotDetailView: View {
-    @EnvironmentObject var store: SnapshotDataStore
+    @EnvironmentObject var snapshotDataStore: SnapshotDataStore
     var insightId: Insight.ID?
     var body: some View {
         if let insightId {
-            if let insight = store.insight(id: insightId) {
+            if let insight = snapshotDataStore.insight(id: insightId) {
                 VStack {
                  Text ("")
                         .navigationTitle(insight.insightName)

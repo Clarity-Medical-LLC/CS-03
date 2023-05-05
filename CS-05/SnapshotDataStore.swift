@@ -37,7 +37,7 @@ class SnapshotDataStore: ObservableObject {
                                            insightLowRange: insight.insightLowRange,
                                            insightHighRange: insight.insightHighRange,
                                            insightValue1: insight.insightValue1,
-                                           familymember: newSnapshot)
+                                           snapshot: newSnapshot)
                 Insights.append(newInsight)
                 newSnapshot.insights.append(newInsight)
             }
@@ -53,7 +53,7 @@ class SnapshotDataStore: ObservableObject {
         Insights.first(where: {$0.id == id})
     }
     
-    func familymember(id: String) -> Snapshot? {
+    func snapshot(id: String) -> Snapshot? {
         Snapshots.first(where: {$0.id == id})
     }
 }
