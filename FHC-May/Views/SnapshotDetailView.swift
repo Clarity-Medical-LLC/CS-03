@@ -51,14 +51,15 @@ struct SnapshotDetailView: View {
                 }
                 .padding(.horizontal, 20)
             }
-            Text("Assigned Specialist")
+            Text("Specialist Assigned")
             Text("Tracking Biometrics:")
             Text("Care Pathways:  Options, Risks & Incentives")
             Text("Progress")
             Text("Questions to Ask")
             Text("Articles & Videos")
             Text("Med Kit")
-            Text("Try This")
+            Text("Calendar")
+
             Spacer()
             
         } else {

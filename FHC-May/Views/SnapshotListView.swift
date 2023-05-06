@@ -93,20 +93,19 @@ struct SnapshotListView: View {
                         .padding ([.leading])
                     }
 
-                    Text ("- Profile, Vitals & Risk Scores")
-                        .padding ([.leading, .top])
                     
-                    Text ("My Medical Questions:")
+                    
+                    Text ("Profile")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
                         .padding ([.leading, .top, .bottom])
    
-                    Text ("1. I'm feeling lathargic, and the last time I felt this way it was my blood thinner Should I change my meds?")
+                    Text ("Description, Vitals, Recent Symptoms")
                         .padding ([.leading])
 
 
-                    Text ("My Insurance Questions:")
+                    Text ("My Questions:")
                          .font(.title)
                          .fontWeight(.bold)
                          .foregroundColor(.red)
@@ -115,7 +114,10 @@ struct SnapshotListView: View {
                     Text ("1. What is the status of the Prior Authorization pending for my hip surgury?")
                         .padding ([.leading])
                     
-                   Text ("My Health:")
+                    Text ("2. I'm feeling lathargic, and the last time I felt this way it was my blood thinner Should I change my meds?")
+                        .padding ([.leading, .top])
+                    
+                   Text ("I'm Watching:")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
