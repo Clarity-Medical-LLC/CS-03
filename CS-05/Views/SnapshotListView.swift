@@ -83,33 +83,41 @@ struct SnapshotListView: View {
                 
                 VStack (alignment: .leading) {
                     Text(snapshot.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding (.leading)
                     HStack {
-                        Text("Clincial Snapshot as of: "
+                        Text("Summary Snapshot as of: "
                              + "\(snapshot.dateCreated)")
                         .font(.subheadline)
                         .padding (.leading)
                         Spacer()
                     }
                     Text (" ")
-                        .padding(.leading)
-                    
+
                     Text ("Profile")
                         .padding (.leading)
                     Text ("Risk Scores")
                         .padding (.leading)
-                    Text ("Symptoms")
-                        .padding (.leading)
-                    Text ("Questions")
-                        .padding (.leading)
                     Text (" ")
-                        .padding (.leading)
-                    Text ("Conditions")
+                    Text ("Questions to Discuss")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding (.leading)
+   
+                    Text (" ")
+                        .padding (.leading)
+                    Text ("1. Should I change my meds?")
+                        .padding (.leading)
+                        .padding(.bottom)
+
+                    
+                    
+                   Text ("Conditions")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding (.leading)
+                    
                 }
 
 
