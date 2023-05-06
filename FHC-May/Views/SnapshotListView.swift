@@ -70,7 +70,7 @@ struct SnapshotListView: View {
                     .resizable()
                     .scaledToFit()
                     .padding(40)
-                Text("Clinicial Snapshot - Current Situation")
+                Text("Clinicial Snapshot")
                     .font(.headline)
                 
             }

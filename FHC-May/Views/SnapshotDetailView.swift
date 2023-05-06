@@ -13,7 +13,7 @@ struct SnapshotDetailView: View {
         if let insightId {
             if let insight = snapshotDataStore.insight(id: insightId) {
                 VStack {
-                 Text ("")
+                 Text ("xxx")
                         .navigationTitle(insight.insightName)
 
 //                    .toolbarBackground(.orange.gradient, for: .navigationBar)
@@ -68,7 +68,7 @@ struct SnapshotDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Insight - Details")
+                Text("Condition Details")
                     .font(.headline)
                 
             }
