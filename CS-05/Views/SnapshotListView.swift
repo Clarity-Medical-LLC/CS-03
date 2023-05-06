@@ -70,7 +70,7 @@ struct SnapshotListView: View {
                     .resizable()
                     .scaledToFit()
                     .padding(40)
-                Text("Clinicial Snapshot - Insight Groups")
+                Text("Clinicial Snapshot - Current Situation")
                     .font(.headline)
                 
             }
@@ -84,35 +84,53 @@ struct SnapshotListView: View {
                 VStack (alignment: .leading) {
                     Text(snapshot.name)
                         .font(.title)
+                        .fontWeight(.bold)
                         .padding (.leading)
                     HStack {
-                        Text("Situation as of: "
+                        Text("Clincial Snapshot as of: "
                              + "\(snapshot.dateCreated)")
                         .font(.subheadline)
                         .padding (.leading)
                         Spacer()
                     }
+                    Text (" ")
+                        .padding(.leading)
+                    
+                    Text ("Profile")
+                        .padding (.leading)
+                    Text ("Risk Scores")
+                        .padding (.leading)
+                    Text ("Symptoms")
+                        .padding (.leading)
+                    Text ("Questions")
+                        .padding (.leading)
+                    Text (" ")
+                        .padding (.leading)
+                    Text ("Conditions")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding (.leading)
                 }
-               Spacer()
+
 
                 
                 List(snapshot.insights, selection: $insightId) { insight in
 
                         VStack (alignment: .leading) {
-                            Text(insight.insightName)
-                                .font(.headline)
-                            Text("Key Insights")
-                                .font(.caption)
-                            Text("Questions to ask")
-  
+                           
+                                Text(insight.insightName)
+                                    .font(.headline)
+
                         }
+                 
                 }
                 .padding()
  //             .navigationTitle(snapshot.name
                 
             }
-            
+        
         }
+    
     }
         
         

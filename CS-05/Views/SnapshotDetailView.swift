@@ -20,8 +20,8 @@ struct SnapshotDetailView: View {
 //                    .toolbarBackground(.visible, for: .navigationBar)
 //                    .toolbarColorScheme(.dark, for: .navigationBar)
                     
-                    Spacer()
-                    Text("Ingiht Tile Details:   " + insight.insightName)
+          
+                    Text("Condition:   " + insight.insightName)
                         .font(.headline)
                     Text("\"" + insight.insightCode + "\"")
                         .font(.largeTitle)
@@ -47,10 +47,20 @@ struct SnapshotDetailView: View {
                     .padding()
                     .border(.primary)
                     .font(.title3)
-                    Spacer()
+  //                  Spacer()
                 }
                 .padding(.horizontal, 20)
             }
+            Text("Assigned Specialist")
+            Text("Tracking Biometrics:")
+            Text("Care Pathways:  Options, Risks & Incentives")
+            Text("Progress")
+            Text("Questions to Ask")
+            Text("Articles & Videos")
+            Text("Med Kit")
+            Text("Try This")
+            Spacer()
+            
         } else {
             VStack {
                 Image("insight")

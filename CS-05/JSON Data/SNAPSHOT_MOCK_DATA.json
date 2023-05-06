@@ -6,7 +6,7 @@
     "insights": [
       {
         "id": "92c08f4a-d5bf-49e4-809f-7aefaa155c16",
-        "insightName": "Profile",
+        "insightName": "High Blood Pressure",
         "insightCode": "Blood Pressure",
         "insightValue1": "120/30",
         "insightLowRange": "100/20",
@@ -14,7 +14,7 @@
       },
       {
         "id": "80bee40f-0ff7-4c56-a70d-002fa36726ae",
-        "insightName": "New Symptoms",
+        "insightName": "High Cholesterol",
         "insightCode": "Mather",
         "insightValue1": "Geologist I",
         "insightLowRange": "Business Development",
@@ -45,7 +45,7 @@
     "insights": [
       {
         "id": "5c0b2a91-501e-417d-94c1-90cf80077b74",
-        "insightName": "Annmaria",
+        "insightName": "General Profile",
         "insightCode": "Coppo",
         "insightValue1": "Senior Editor",
         "insightLowRange": "Sales",
@@ -53,7 +53,7 @@
       },
       {
         "id": "794b40d2-80c4-4d19-ae63-050b5751b64b",
-        "insightName": "Noami",
+        "insightName": "Recent Symptoms",
         "insightCode": "Hesser",
         "insightValue1": "Staff Scientist",
         "insightLowRange": "Engineering",
