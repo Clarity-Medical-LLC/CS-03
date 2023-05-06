@@ -1,5 +1,5 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-05-05A
+// GitHub:  FHC-May    Branch Version:  2023-05-xxx
 //
 // by John Mather 
 //
@@ -11,5 +11,5 @@ struct Snapshot: Identifiable {
     var id: String
     var dateCreated: String
     var name: String
-    var insights: [Insight] = []
+    var conditions: [Condition] = []
 }

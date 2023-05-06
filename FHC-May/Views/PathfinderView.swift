@@ -1,5 +1,5 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-05-05A
+// GitHub:  FHC-May    Branch Version:  2023-05-xxx
 //
 // by John Mather 
 //
@@ -8,7 +8,7 @@ import SwiftUI
 
 struct PathfinderView: View {
     var body: some View {
-        Text("Insight Search Results")
+        Text("Condition Search Results")
             .font(.largeTitle)
             .bold()
             .foregroundColor(.red)

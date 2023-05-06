@@ -1,5 +1,5 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-05-05A
+// GitHub:  FHC-May    Branch Version:  2023-05-xxx
 //
 // by John Mather 
 //
@@ -8,22 +8,22 @@ import SwiftUI
 
 struct ConditionDetailView: View {
     @EnvironmentObject var snapshotDataStore: SnapshotDataStore
-    var insightId: Insight.ID?
+    var conditionId: Condition.ID?
     var body: some View {
-        if let insightId {
-            if let insight = snapshotDataStore.insight(id: insightId) {
+        if let conditionId {
+            if let condition = snapshotDataStore.condition(id: conditionId) {
                 VStack {
                  Text ("xxx")
-                        .navigationTitle(insight.insightName)
+                        .navigationTitle(condition.conditionName)
 
 //                    .toolbarBackground(.orange.gradient, for: .navigationBar)
 //                    .toolbarBackground(.visible, for: .navigationBar)
 //                    .toolbarColorScheme(.dark, for: .navigationBar)
                     
           
-                    Text("Condition:   " + insight.insightName)
+                    Text("Condition:   " + condition.conditionName)
                         .font(.headline)
-                    Text("\"" + insight.insightCode + "\"")
+                    Text("\"" + condition.conditionCode + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
                         .italic()
@@ -32,16 +32,16 @@ struct ConditionDetailView: View {
                         GridRow(alignment: .top) {
                             Text("Low:").bold()
                                 .gridColumnAlignment(.trailing)
-                            Text(insight.insightLowRange)
+                            Text(condition.conditionLowRange)
                                 .gridColumnAlignment(.leading)
                         }
                         GridRow(alignment: .top) {
                             Text("Target:").bold()
-                            Text(insight.insightValue1)
+                            Text(condition.conditionValue1)
                         }
                         GridRow(alignment: .top) {
                             Text("High:").bold()
-                            Text(insight.insightHighRange)
+                            Text(condition.conditionHighRange)
                         }
                     }
                     .padding()
@@ -64,7 +64,7 @@ struct ConditionDetailView: View {
             
         } else {
             VStack {
-                Image("insight")
+                Image("condition")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
@@ -80,7 +80,7 @@ struct ConditionDetailView: View {
 
 struct ConditionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ConditionDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        ConditionDetailView(conditionId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(SnapshotDataStore())
     }
 }

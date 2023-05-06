@@ -1,5 +1,5 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-05-05A
+// GitHub:  FHC-May    Branch Version:  2023-05-xxx
 //
 // by John Mather 
 //
@@ -9,17 +9,17 @@ import Foundation
 
 class SnapshotDataStore: ObservableObject {
  
-    // MARK: - Each IdCard may be linked one or more Snapshots.  A Snapshot is a point-in-time set of health data insights:
+    // MARK: - Each IdCard may be linked one or more Snapshots.  A Snapshot is a point-in-time set of health data conditions:
 
     @Published var Snapshots: [Snapshot] = []
     
-    // MARK: - Each Snapshot has multiple groups of health data cards, each group of cards is called an Insight:
+    // MARK: - Each Snapshot has multiple groups of health data cards, each group of cards is called an Condition:
     
-    @Published var Insights: [Insight] = []
-    @Published var insightsFilter = ""
+    @Published var Conditions: [Condition] = []
+    @Published var conditionsFilter = ""
     
-//    var filteredInsights: [Insight] {
-//        insightsFilter.isEmpty ? Insights : Insights.filter {$0.fullName.lowercased().contains(insightsFilter.lowercased())}
+//    var filteredConditions: [Condition] {
+//        conditionsFilter.isEmpty ? Conditions : Conditions.filter {$0.fullName.lowercased().contains(conditionsFilter.lowercased())}
 //    }
 
     init() {
@@ -30,27 +30,27 @@ class SnapshotDataStore: ObservableObject {
         let json = Bundle.main.decode([SnapshotJSON].self, from: "SNAPSHOT_MOCK_DATA.json")
         for snapshot in json {
             var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
-            for insight in snapshot.insights {
-                let newInsight = Insight(id: insight.id,
-                                           insightName: insight.insightName,
-                                           insightCode: insight.insightCode,
-                                           insightLowRange: insight.insightLowRange,
-                                           insightHighRange: insight.insightHighRange,
-                                           insightValue1: insight.insightValue1,
+            for condition in snapshot.conditions {
+                let newCondition = Condition(id: condition.id,
+                                           conditionName: condition.conditionName,
+                                           conditionCode: condition.conditionCode,
+                                           conditionLowRange: condition.conditionLowRange,
+                                           conditionHighRange: condition.conditionHighRange,
+                                           conditionValue1: condition.conditionValue1,
                                            snapshot: newSnapshot)
-                Insights.append(newInsight)
-                newSnapshot.insights.append(newInsight)
+                Conditions.append(newCondition)
+                newSnapshot.conditions.append(newCondition)
             }
-            newSnapshot.insights = newSnapshot.insights.sorted(using: KeyPathComparator(\.insightCode))
+            newSnapshot.conditions = newSnapshot.conditions.sorted(using: KeyPathComparator(\.conditionCode))
             Snapshots.append(newSnapshot)
             
         }
  //       Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
-//        Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
+//        Conditions = Conditions.sorted(using: KeyPathComparator(\.conditionCode))
     }
-    // Return first insight where insight matches, if one exists (?)
-    func insight(id: String) -> Insight? {
-        Insights.first(where: {$0.id == id})
+    // Return first condition where condition matches, if one exists (?)
+    func condition(id: String) -> Condition? {
+        Conditions.first(where: {$0.id == id})
     }
     
     func snapshot(id: String) -> Snapshot? {

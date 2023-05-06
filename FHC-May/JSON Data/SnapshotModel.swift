@@ -1,7 +1,7 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-03-17b
+// GitHub:  FHC-May    Branch Version:   2023-05-xxx
 //
-// by John Mather March 15, 2023
+// by John Mather May, 2023
 //
 
 import Foundation
@@ -10,18 +10,18 @@ import Foundation
         let id: String
         var description: String
         var dateCreated: String
-        var insights: [Insight]
+        var conditions: [Condition]
         
-        struct Insight: Codable, Identifiable, Hashable {
+        struct Condition: Codable, Identifiable, Hashable {
             let id: String
-            var insightName: String
-            var insightCode: String
-            var insightValue1: String
-            var insightLowRange: String
-            var insightHighRange: String
+            var conditionName: String
+            var conditionCode: String
+            var conditionValue1: String
+            var conditionLowRange: String
+            var conditionHighRange: String
             
             var fullName: String {
-                insightName + " " + insightCode
+                conditionName + " " + conditionCode
             }
         }
     }

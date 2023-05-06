@@ -1,5 +1,5 @@
 //
-// GitHub:  CS-05    Branch Version:  2023-05-05A
+// GitHub:  FHC-May    Branch Version:  2023-05-xxx
 //
 // by John Mather 
 //
@@ -9,7 +9,7 @@ import SwiftUI
 struct SnapshotListView: View {
     @EnvironmentObject var snapshotDataStore: SnapshotDataStore
     @State private var snapshotID: Snapshot.ID?
-    @State private var insightId: Insight.ID?
+    @State private var conditionId: Condition.ID?
     @State private var columnVisibility:  NavigationSplitViewVisibility = .all
     
     var body: some View {
@@ -127,11 +127,11 @@ struct SnapshotListView: View {
 
 
                 
-                List(snapshot.insights, selection: $insightId) { insight in
+                List(snapshot.conditions, selection: $conditionId) { condition in
 
                         VStack (alignment: .leading) {
                            
-                                Text(insight.insightName)
+                                Text(condition.conditionName)
                                     .font(.headline)
 
                         }
@@ -149,15 +149,15 @@ struct SnapshotListView: View {
         
         // MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
             detail: {
-                ConditionDetailView(insightId: insightId)
+                ConditionDetailView(conditionId: conditionId)
             }
 
         .navigationSplitViewStyle(.balanced)
  
-        .onChange(of: snapshotID) { _ in insightId = nil; columnVisibility = .doubleColumn}
+        .onChange(of: snapshotID) { _ in conditionId = nil; columnVisibility = .doubleColumn}
  
-        .onChange(of: insightId) { _ in
-        if insightId == nil {
+        .onChange(of: conditionId) { _ in
+        if conditionId == nil {
             columnVisibility = .all
         } else {
             columnVisibility = .doubleColumn
