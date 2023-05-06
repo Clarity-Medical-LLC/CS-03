@@ -85,38 +85,41 @@ struct SnapshotListView: View {
                     Text(snapshot.name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding (.leading)
+                        .padding ([.leading])
                     HStack {
-                        Text("Summary Snapshot as of: "
+                        Text("Snapshot, as of: "
                              + "\(snapshot.dateCreated)")
                         .font(.subheadline)
-                        .padding (.leading)
-                        Spacer()
+                        .padding ([.leading])
                     }
-                    Text (" ")
 
-                    Text ("Profile")
-                        .padding (.leading)
-                    Text ("Risk Scores")
-                        .padding (.leading)
-                    Text (" ")
-                    Text ("Questions to Discuss")
+                    Text ("- Profile, Vitals & Risk Scores")
+                        .padding ([.leading, .top])
+                    
+                    Text ("Questions for Doctor:")
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding (.leading)
+                        .foregroundColor(.red)
+                        .padding ([.leading, .top, .bottom])
    
-                    Text (" ")
-                        .padding (.leading)
-                    Text ("1. Should I change my meds?")
-                        .padding (.leading)
-                        .padding(.bottom)
+                    Text ("1. I'm feeling lathargic, and the last time I felt this way it was my blood thinner Should I change my meds?")
+                        .padding ([.leading])
 
+
+                    Text ("Questions for Insurance:")
+                         .font(.title)
+                         .fontWeight(.bold)
+                         .foregroundColor(.red)
+                         .padding ([.leading, .top, .bottom])
                     
+                    Text ("1. What is the status of the Prior Authorization pending for my hip surgury?")
+                        .padding ([.leading])
                     
-                   Text ("Conditions")
+                   Text ("I am Managing:")
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding (.leading)
+                        .foregroundColor(.red)
+                        .padding ([.leading, .top])
                     
                 }
 
@@ -132,8 +135,8 @@ struct SnapshotListView: View {
                         }
                  
                 }
-                .padding()
- //             .navigationTitle(snapshot.name
+                .padding(.leading)
+
                 
             }
         
