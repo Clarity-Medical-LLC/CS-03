@@ -96,7 +96,7 @@ struct SnapshotListView: View {
                     Text ("- Profile, Vitals & Risk Scores")
                         .padding ([.leading, .top])
                     
-                    Text ("Questions for Doctor:")
+                    Text ("My Medical Questions:")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
@@ -106,7 +106,7 @@ struct SnapshotListView: View {
                         .padding ([.leading])
 
 
-                    Text ("Questions for Insurance:")
+                    Text ("My Insurance Questions:")
                          .font(.title)
                          .fontWeight(.bold)
                          .foregroundColor(.red)
@@ -115,7 +115,7 @@ struct SnapshotListView: View {
                     Text ("1. What is the status of the Prior Authorization pending for my hip surgury?")
                         .padding ([.leading])
                     
-                   Text ("I am Managing:")
+                   Text ("My Health:")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
