@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct SnapshotDetailView: View {
+struct ConditionDetailView: View {
     @EnvironmentObject var snapshotDataStore: SnapshotDataStore
     var insightId: Insight.ID?
     var body: some View {
@@ -78,9 +78,9 @@ struct SnapshotDetailView: View {
 }
     
 
-struct SnapshotDetailView_Previews: PreviewProvider {
+struct ConditionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        SnapshotDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        ConditionDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(SnapshotDataStore())
     }
 }

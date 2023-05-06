@@ -10,7 +10,7 @@
 		79615DBC29393A9A00BABD7D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615DBB29393A9A00BABD7D /* ShareView.swift */; };
 		79B07158291683EF005FEE34 /* HomeMedKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B07157291683EF005FEE34 /* HomeMedKitView.swift */; };
 		79B0715A29168719005FEE34 /* PathfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0715929168719005FEE34 /* PathfinderView.swift */; };
-		BB06EC6328C5536F00BFFFD9 /* SnapshotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* SnapshotDetailView.swift */; };
+		BB06EC6328C5536F00BFFFD9 /* ConditionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* ConditionDetailView.swift */; };
 		BB5988F828A37D4F006A1614 /* SNAPSHOT_MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = BB5988F728A37D4F006A1614 /* SNAPSHOT_MOCK_DATA.json */; };
 		BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A7288BAFB700FB853D /* AppEntry.swift */; };
 		BBAD59AA288BAFB700FB853D /* SnapshotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A9288BAFB700FB853D /* SnapshotListView.swift */; };
@@ -28,7 +28,7 @@
 		79615DBB29393A9A00BABD7D /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		79B07157291683EF005FEE34 /* HomeMedKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMedKitView.swift; sourceTree = "<group>"; };
 		79B0715929168719005FEE34 /* PathfinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderView.swift; sourceTree = "<group>"; };
-		BB06EC6228C5536F00BFFFD9 /* SnapshotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotDetailView.swift; sourceTree = "<group>"; };
+		BB06EC6228C5536F00BFFFD9 /* ConditionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionDetailView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* SNAPSHOT_MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SNAPSHOT_MOCK_DATA.json; sourceTree = "<group>"; };
 		BBAD59A4288BAFB700FB853D /* FHC-May.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FHC-May.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BBAD59A9288BAFB700FB853D /* SnapshotListView.swift */,
-				BB06EC6228C5536F00BFFFD9 /* SnapshotDetailView.swift */,
+				BB06EC6228C5536F00BFFFD9 /* ConditionDetailView.swift */,
 				79B07157291683EF005FEE34 /* HomeMedKitView.swift */,
 				79B0715929168719005FEE34 /* PathfinderView.swift */,
 				79615DBB29393A9A00BABD7D /* ShareView.swift */,
@@ -196,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB06EC6328C5536F00BFFFD9 /* SnapshotDetailView.swift in Sources */,
+				BB06EC6328C5536F00BFFFD9 /* ConditionDetailView.swift in Sources */,
 				BBAD59B6288BAFE300FB853D /* SnapshotModel.swift in Sources */,
 				BBAD59C2288BB12A00FB853D /* SnapshotDataStore.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,

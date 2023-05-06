@@ -149,7 +149,7 @@ struct SnapshotListView: View {
         
         // MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
             detail: {
-                SnapshotDetailView(insightId: insightId)
+                ConditionDetailView(insightId: insightId)
             }
 
         .navigationSplitViewStyle(.balanced)
