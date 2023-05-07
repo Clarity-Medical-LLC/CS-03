@@ -14,7 +14,7 @@ struct ConditionDetailView: View {
             if let condition = snapshotDataStore.condition(id: conditionId) {
                 VStack {
                  Text ("xxx")
-                        .navigationTitle(condition.conditionName)
+//                    .navigationTitle(condition.conditionName)
 
 //                    .toolbarBackground(.orange.gradient, for: .navigationBar)
 //                    .toolbarBackground(.visible, for: .navigationBar)
