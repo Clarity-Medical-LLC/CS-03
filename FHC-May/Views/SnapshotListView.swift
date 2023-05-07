@@ -95,7 +95,7 @@ struct SnapshotListView: View {
 
                     
                     
-                    Text ("Profile")
+                    Text ("Health Profile")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
@@ -117,7 +117,7 @@ struct SnapshotListView: View {
                     Text ("2. I'm feeling lathargic, and the last time I felt this way it was my blood thinner Should I change my meds?")
                         .padding ([.leading, .top])
                     
-                   Text ("I'm Watching:")
+                   Text ("Monitoring:")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
