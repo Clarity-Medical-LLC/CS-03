@@ -28,7 +28,7 @@ struct SnapshotListView: View {
                      + (appName)
                      + "   v. "
                      + (appVersion))
-                    .font(.subheadline)
+                    .font(.footnote)
                     .padding(.leading)
                 Spacer()
             }

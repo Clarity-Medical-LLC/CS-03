@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79647CAA2A081556008270BC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */,
+				BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		BB80BDBE28A2E0B60096746A /* JSON Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +93,8 @@
 			children = (
 				BBAD59A7288BAFB700FB853D /* AppEntry.swift */,
 				BBCDA53F28C45B3D00B56627 /* Views */,
+				79647CAA2A081556008270BC /* ViewModels */,
 				BBB1EA2728C4573E00F0228A /* Models */,
-				BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */,
-				BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */,
 				BB80BDBE28A2E0B60096746A /* JSON Data */,
 				BBAD59AB288BAFB800FB853D /* Assets.xcassets */,
 				BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */,
@@ -339,7 +347,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07A";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07B";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,8 +359,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-07A";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07A";
+				MARKETING_VERSION = "2023-05-07B";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07B";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,7 +380,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07A";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07B";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,8 +392,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-07A";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07A";
+				MARKETING_VERSION = "2023-05-07B";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07B";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
