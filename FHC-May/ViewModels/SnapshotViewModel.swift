@@ -9,12 +9,7 @@ import Foundation
 
 class SnapshotViewModel: ObservableObject {
  
-    // MARK: - Each IdCard may be linked one or more Snapshots.  A Snapshot is a point-in-time set of health data conditions:
-
     @Published var Snapshots: [Snapshot] = []
-    
-    // MARK: - Each Snapshot has multiple groups of health data cards, each group of cards is called an Condition:
-    
     @Published var Conditions: [Condition] = []
     @Published var conditionsFilter = ""
     
@@ -26,8 +21,9 @@ class SnapshotViewModel: ObservableObject {
         loadSnapshots()
     }
     
+    // Decode the Snapshot Mock Data, using the SnapshotJSONMap
     func loadSnapshots() {
-        let json = Bundle.main.decode([SnapshotJSON].self, from: "SNAPSHOT_MOCK_DATA.json")
+        let json = Bundle.main.decode([SnapshotJSONMap].self, from: "SNAPSHOT_MOCK_DATA.json")
         for snapshot in json {
             var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
             for condition in snapshot.conditions {

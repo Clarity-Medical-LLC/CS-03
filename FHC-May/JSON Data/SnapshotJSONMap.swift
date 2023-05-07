@@ -6,7 +6,7 @@
 
 import Foundation
 
-    struct SnapshotJSON: Codable, Identifiable {
+    struct SnapshotJSONMap: Codable, Identifiable {
         let id: String
         var description: String
         var dateCreated: String
