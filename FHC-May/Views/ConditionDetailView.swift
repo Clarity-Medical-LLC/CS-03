@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct ConditionDetailView: View {
-    @EnvironmentObject var snapshotDataStore: SnapshotDataStore
+    @EnvironmentObject var snapshotDataStore: SnapshotViewModel
     var conditionId: Condition.ID?
     var body: some View {
         if let conditionId {
@@ -81,6 +81,6 @@ struct ConditionDetailView: View {
 struct ConditionDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ConditionDetailView(conditionId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
-            .environmentObject(SnapshotDataStore())
+            .environmentObject(SnapshotViewModel())
     }
 }

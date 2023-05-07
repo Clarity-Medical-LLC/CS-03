@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct AppEntry: App {
-    @StateObject var snapshotdatastore = SnapshotDataStore()
+    @StateObject var snapshotdatastore = SnapshotViewModel()
     var body: some Scene {
         WindowGroup {
 

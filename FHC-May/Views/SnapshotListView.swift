@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct SnapshotListView: View {
-    @EnvironmentObject var snapshotDataStore: SnapshotDataStore
+    @EnvironmentObject var snapshotDataStore: SnapshotViewModel
     @State private var snapshotID: Snapshot.ID?
     @State private var conditionId: Condition.ID?
     @State private var columnVisibility:  NavigationSplitViewVisibility = .all
@@ -28,7 +28,7 @@ struct SnapshotListView: View {
                      + (appName)
                      + "   v. "
                      + (appVersion))
-                    .font(.subheadline)
+                    .font(.footnote)
                     .padding(.leading)
                 Spacer()
             }
@@ -58,6 +58,10 @@ struct SnapshotListView: View {
                 }
             }
             .navigationTitle("My Family")
+            
+            .toolbarBackground(.blue.gradient, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarColorScheme(.dark, for: .navigationBar)
             
         }
         
@@ -92,8 +96,6 @@ struct SnapshotListView: View {
                         .font(.subheadline)
                         .padding ([.leading])
                     }
-
-                    
                     
                     Text ("Health Profile")
                         .font(.title)
@@ -176,6 +178,6 @@ struct SnapshotListView: View {
 struct SnapshotListView_Previews: PreviewProvider {
     static var previews: some View {
         SnapshotListView()
-            .environmentObject(SnapshotDataStore())
+            .environmentObject(SnapshotViewModel())
     }
 }
