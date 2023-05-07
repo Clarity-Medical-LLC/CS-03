@@ -7,14 +7,9 @@
 
 import Foundation
 
-class SnapshotDataStore: ObservableObject {
+class SnapshotViewModel: ObservableObject {
  
-    // MARK: - Each IdCard may be linked one or more Snapshots.  A Snapshot is a point-in-time set of health data conditions:
-
     @Published var Snapshots: [Snapshot] = []
-    
-    // MARK: - Each Snapshot has multiple groups of health data cards, each group of cards is called an Condition:
-    
     @Published var Conditions: [Condition] = []
     @Published var conditionsFilter = ""
     

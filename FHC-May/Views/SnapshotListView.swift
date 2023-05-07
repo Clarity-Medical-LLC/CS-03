@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct SnapshotListView: View {
-    @EnvironmentObject var snapshotDataStore: SnapshotDataStore
+    @EnvironmentObject var snapshotDataStore: SnapshotViewModel
     @State private var snapshotID: Snapshot.ID?
     @State private var conditionId: Condition.ID?
     @State private var columnVisibility:  NavigationSplitViewVisibility = .all
@@ -176,6 +176,6 @@ struct SnapshotListView: View {
 struct SnapshotListView_Previews: PreviewProvider {
     static var previews: some View {
         SnapshotListView()
-            .environmentObject(SnapshotDataStore())
+            .environmentObject(SnapshotViewModel())
     }
 }

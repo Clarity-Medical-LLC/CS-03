@@ -20,7 +20,7 @@
 		BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */; };
 		BBAD59BE288BB05500FB853D /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BD288BB05500FB853D /* Snapshot.swift */; };
 		BBAD59C0288BB08600FB853D /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BF288BB08600FB853D /* Condition.swift */; };
-		BBAD59C2288BB12A00FB853D /* SnapshotDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59C1288BB12A00FB853D /* SnapshotDataStore.swift */; };
+		BBAD59C2288BB12A00FB853D /* SnapshotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */; };
 		BBC6DA4B288C5FA1004C0AF6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		BBAD59BD288BB05500FB853D /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
 		BBAD59BF288BB08600FB853D /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
-		BBAD59C1288BB12A00FB853D /* SnapshotDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotDataStore.swift; sourceTree = "<group>"; };
+		BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewModel.swift; sourceTree = "<group>"; };
 		BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +85,7 @@
 				BBAD59A7288BAFB700FB853D /* AppEntry.swift */,
 				BBCDA53F28C45B3D00B56627 /* Views */,
 				BBB1EA2728C4573E00F0228A /* Models */,
-				BBAD59C1288BB12A00FB853D /* SnapshotDataStore.swift */,
+				BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */,
 				BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */,
 				BB80BDBE28A2E0B60096746A /* JSON Data */,
 				BBAD59AB288BAFB800FB853D /* Assets.xcassets */,
@@ -198,7 +198,7 @@
 			files = (
 				BB06EC6328C5536F00BFFFD9 /* ConditionDetailView.swift in Sources */,
 				BBAD59B6288BAFE300FB853D /* SnapshotModel.swift in Sources */,
-				BBAD59C2288BB12A00FB853D /* SnapshotDataStore.swift in Sources */,
+				BBAD59C2288BB12A00FB853D /* SnapshotViewModel.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,
 				BBAD59AA288BAFB700FB853D /* SnapshotListView.swift in Sources */,
 				BBAD59C0288BB08600FB853D /* Condition.swift in Sources */,
@@ -339,7 +339,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-06C";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07A";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,8 +351,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-06C";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-06C";
+				MARKETING_VERSION = "2023-05-07A";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07A";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,7 +372,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-06C";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07A";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,8 +384,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-06C";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-06C";
+				MARKETING_VERSION = "2023-05-07A";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07A";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
