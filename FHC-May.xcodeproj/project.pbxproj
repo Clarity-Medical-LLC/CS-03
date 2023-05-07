@@ -18,8 +18,6 @@
 		BBAD59AF288BAFB800FB853D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */; };
 		BBAD59B6288BAFE300FB853D /* SnapshotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59B5288BAFE300FB853D /* SnapshotModel.swift */; };
 		BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */; };
-		BBAD59BE288BB05500FB853D /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BD288BB05500FB853D /* Snapshot.swift */; };
-		BBAD59C0288BB08600FB853D /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BF288BB08600FB853D /* Condition.swift */; };
 		BBAD59C2288BB12A00FB853D /* SnapshotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */; };
 		BBC6DA4B288C5FA1004C0AF6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
@@ -37,8 +35,6 @@
 		BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBAD59B5288BAFE300FB853D /* SnapshotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotModel.swift; sourceTree = "<group>"; };
 		BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		BBAD59BD288BB05500FB853D /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
-		BBAD59BF288BB08600FB853D /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		BBAD59C1288BB12A00FB853D /* SnapshotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewModel.swift; sourceTree = "<group>"; };
 		BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +62,6 @@
 		BB80BDBE28A2E0B60096746A /* JSON Data */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59B5288BAFE300FB853D /* SnapshotModel.swift */,
 				BB5988F728A37D4F006A1614 /* SNAPSHOT_MOCK_DATA.json */,
 			);
 			path = "JSON Data";
@@ -114,8 +109,7 @@
 		BBB1EA2728C4573E00F0228A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59BD288BB05500FB853D /* Snapshot.swift */,
-				BBAD59BF288BB08600FB853D /* Condition.swift */,
+				BBAD59B5288BAFE300FB853D /* SnapshotModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,10 +203,8 @@
 				BBAD59C2288BB12A00FB853D /* SnapshotViewModel.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,
 				BBAD59AA288BAFB700FB853D /* SnapshotListView.swift in Sources */,
-				BBAD59C0288BB08600FB853D /* Condition.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,
 				79615DBC29393A9A00BABD7D /* ShareView.swift in Sources */,
-				BBAD59BE288BB05500FB853D /* Snapshot.swift in Sources */,
 				79B07158291683EF005FEE34 /* HomeMedKitView.swift in Sources */,
 				79B0715A29168719005FEE34 /* PathfinderView.swift in Sources */,
 			);
@@ -347,7 +339,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07B";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,8 +351,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-07B";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07B";
+				MARKETING_VERSION = "2023-05-07C";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -380,7 +372,7 @@
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07B";
+				INFOPLIST_KEY_CFBundleDisplayName = "2023-05-07C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -392,8 +384,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2023-05-07B";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07B";
+				MARKETING_VERSION = "2023-05-07C";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.2023-05-07C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
