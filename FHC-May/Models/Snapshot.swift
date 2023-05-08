@@ -9,6 +9,7 @@ import Foundation
 
 struct Snapshot: Identifiable {
     var id: String
+//  var userID: String
     var dateCreated: String
     var name: String
     var conditions: [Condition] = []

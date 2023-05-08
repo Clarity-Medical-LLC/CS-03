@@ -1,7 +1,7 @@
 [
   {
     "id": "d4e75e49-d278-4a3e-bb87-b8ea3fa6ef39",
-    "dateCreated": "2023",
+    "dateCreated": "1st Snapshot 2023",
     "description": "A Typical Grandma",
     "conditions": [
       {
@@ -40,7 +40,7 @@
   },
   {
     "id": "b94762d9-563f-4943-9786-d6dae2308817",
-    "dateCreated": "2022",
+    "dateCreated": "1st Snapshot - 2022",
     "description": "A Typical Mom",
     "conditions": [
       {
@@ -330,8 +330,8 @@
   },
   {
     "id": "47378eaf-c79c-4c32-b28e-f4fcbfea96cc",
-    "dateCreated": "2013",
-    "description": "Mather, John",
+    "dateCreated": "2nd Snapshot - 2013",
+    "description": "A Typical Grandma",
     "conditions": [
       {
         "id": "d1cd435c-27d8-4c56-8ca0-0d85671c5a40",

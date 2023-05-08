@@ -25,7 +25,9 @@ class SnapshotViewModel: ObservableObject {
     func loadSnapshots() {
         let json = Bundle.main.decode([SnapshotJSONMap].self, from: "SNAPSHOT_MOCK_DATA.json")
         for snapshot in json {
-            var newSnapshot = Snapshot(id: snapshot.id, dateCreated: snapshot.dateCreated, name: snapshot.description)
+            var newSnapshot = Snapshot(id: snapshot.id,
+                                       dateCreated: snapshot.dateCreated,
+                                       name: snapshot.description)
             for condition in snapshot.conditions {
                 let newCondition = Condition(id: condition.id,
                                            conditionName: condition.conditionName,
@@ -41,7 +43,7 @@ class SnapshotViewModel: ObservableObject {
             Snapshots.append(newSnapshot)
             
         }
- //       Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
+            Snapshots = Snapshots.sorted(using: KeyPathComparator(\.dateCreated))
 //        Conditions = Conditions.sorted(using: KeyPathComparator(\.conditionCode))
     }
     // Return first condition where condition matches, if one exists (?)

@@ -63,13 +63,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		BB80BDBE28A2E0B60096746A /* JSON Data */ = {
+		BB80BDBE28A2E0B60096746A /* Snapshot Data */ = {
 			isa = PBXGroup;
 			children = (
 				BBAD59B5288BAFE300FB853D /* SnapshotJSONMap.swift */,
 				BB5988F728A37D4F006A1614 /* SNAPSHOT_MOCK_DATA.json */,
 			);
-			path = "JSON Data";
+			path = "Snapshot Data";
 			sourceTree = "<group>";
 		};
 		BBAD599B288BAFB700FB853D = {
@@ -95,7 +95,7 @@
 				BBCDA53F28C45B3D00B56627 /* Views */,
 				BBB1EA2728C4573E00F0228A /* Models */,
 				79647CAE2A081EB9008270BC /* ViewModels */,
-				BB80BDBE28A2E0B60096746A /* JSON Data */,
+				BB80BDBE28A2E0B60096746A /* Snapshot Data */,
 				BBAD59AB288BAFB800FB853D /* Assets.xcassets */,
 				BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */,
 				BBAD59AD288BAFB800FB853D /* Preview Content */,
