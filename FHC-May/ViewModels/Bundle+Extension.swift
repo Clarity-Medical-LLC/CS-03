@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle {
-    func decode<T: Decodable>(_ type: T.Type,
+    func decode<T: Codable>(_ type: T.Type,
                               from file: String,
                               dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate,
                               keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
